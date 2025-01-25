@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #67C9CB;
+    --secondary-color: rgba(36, 54, 94, 0.4);
+    --btn-bg: var(--primary-color);
+    --descr-txt: rgba(36, 54, 94, .33);
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 112px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 128px;
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 56px;
+        list-style: none;
+
+        .nav-link {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 500;
+            transition: color .3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 848px;
+    text-align: center;
+    text-wrap: balance;
+
+    h1 {
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -2px;
+    }
+}
+
+.hero-description {
+    font-family: DM-Sans, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: inherit;
+    color: var(--descr-txt);
+    line-height: 1.8;
+
+    span {
+        font-weight: 700;
+        font-size: 17px;
+        color: rgba(67, 151, 152, 1);
+        background-color: rgba(103, 201, 203, .3);
+        padding: 10px 0;
+    }
+}
+
+/* Utils Classes */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    background-color: var(--btn-bg);
+    color: #fff;
+    border-radius: 64px;
+    padding: 16px 51px;
+    border: 1px solid var(--btn-bg);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--primary-color);
+        border: 1px solid var(--btn-bg);
+        cursor: pointer;
+    }
+
+    &.btn-opacity {
+        color: var(--primary-color);
+        --btn-bg: transparent;
+        border: 1px solid var(--primary-color);
+
+        &:hover {
+            color: #fff;
+            background-color: var(--primary-color);
+        }
+    }
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+}
