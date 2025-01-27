@@ -92,6 +92,154 @@ body {
     }
 }
 
+/* Features */
+.features-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.features-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 55px;
+    padding: 72px 104px;
+}
+
+.features-block:nth-child(1) {
+    background-color: #EDFCFC;
+}
+
+.features-block:nth-child(2) {
+    background-color: #EDEEFC;
+}
+
+.features-block:nth-child(3) {
+    background-color: #FEFAF8;
+}
+
+.features-block:nth-child(4) {
+    background-color: #FDFAF1;
+}
+
+.features-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 389px;
+}
+
+.features-label img {
+    margin-bottom: 32px;
+}
+
+.features-span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+}
+
+.feat-1 {
+    color: #B6D3D3;
+}
+
+.feat-2 {
+    color: #A6A5E1;
+}
+
+.feat-3 {
+    color: #D7B7B7;
+}
+
+.feat-4 {
+    color: #D0C9B2;
+}
+
+.features-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    line-height: 48px;
+    letter-spacing: .02em;
+}
+
+.features-descr {
+    font-family: DM-Sans, sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    color: var(--descr-txt);
+    line-height: 24px;
+}
+
+.features-link {
+    display: flex;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.features-link_red {
+    color: #DF4D55;
+}
+
+.features-link_yellow {
+    color: #F7CE47;
+}
+
+.features-link svg {
+    position: relative;
+    left: 0;
+    transition: left ease-in-out .3s;
+}
+
+.features-link:hover svg {
+    left: 10px;
+}
+
+.features-download {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+}
+
+.features-list-label {
+    font-family: DM-Sans, sans-serif;
+    color: #000;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+.features-item {
+    font-family: DM-Sans, sans-serif;
+    position: relative;
+    font-weight: 700;
+    color: rgba(36, 54, 94, .88);
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 8px;
+}
+
+.features-item:last-child {
+    margin-bottom: 0;
+}
+
+.features-item::before {
+    position: absolute;
+    content: url('/assets/icons/check-icon.svg');
+    left: 0;
+}
+
+
 /* Utils Classes */
 .btn {
     display: flex;
