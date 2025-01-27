@@ -93,6 +93,9 @@ body {
 }
 
 /* Features */
+.features {
+    margin-bottom: 158px;
+}
 .features-wrapper {
     display: flex;
     flex-direction: column;
@@ -135,14 +138,6 @@ body {
     margin-bottom: 32px;
 }
 
-.features-span {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.07em;
-}
-
 .feat-1 {
     color: #B6D3D3;
 }
@@ -157,14 +152,6 @@ body {
 
 .feat-4 {
     color: #D0C9B2;
-}
-
-.features-title {
-    font-size: 40px;
-    font-weight: 600;
-    color: #000;
-    line-height: 48px;
-    letter-spacing: .02em;
 }
 
 .features-descr {
@@ -239,7 +226,33 @@ body {
     left: 0;
 }
 
+/* Why choose Us */
+.whyus-title {
+    text-align: center;
+    margin-bottom: 112px;
+}
 
+.top-title-color {
+    color: #ACCCCC;
+}
+
+.whyus-cards-list {
+    display: flex;
+    flex-direction: row;
+    gap: 112px;
+    margin-bottom: 136px;
+}
+
+.whyus-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.card-description {
+    color: #2F2C2C;
+}
 /* Utils Classes */
 .btn {
     display: flex;
@@ -276,4 +289,27 @@ body {
 .container {
     max-width: 1216px;
     margin: 0 auto;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    line-height: 48px;
+    letter-spacing: .02em;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 21px;
+    color: #000;
+    line-height: 24px;
+}
+
+.top-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
 }
