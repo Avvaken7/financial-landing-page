@@ -96,6 +96,7 @@ body {
 .features {
     margin-bottom: 158px;
 }
+
 .features-wrapper {
     display: flex;
     flex-direction: column;
@@ -232,7 +233,7 @@ body {
     margin-bottom: 112px;
 }
 
-.top-title-color {
+.whyus-title-color {
     color: #ACCCCC;
 }
 
@@ -240,7 +241,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 112px;
-    margin-bottom: 136px;
+    margin-bottom: 130px;
 }
 
 .whyus-card {
@@ -253,6 +254,90 @@ body {
 .card-description {
     color: #2F2C2C;
 }
+
+/* How it Works! */
+.howitworks {
+    background-color: #f7f9fc;
+    padding: 120px 0px;
+}
+
+.howitworks-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.howitworks-title-color {
+    color: var(--primary-color);
+}
+
+.howitworks-cards-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.howitworks-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 40px;
+    background-color: #fff;
+    padding: 64px;
+    border-radius: 21px;
+}
+
+.howitworks-card:nth-child(1):before {
+    content: '1';
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: .02em;
+    font-weight: 600;
+    top: 0;
+    left: 30px;
+    color: var(--primary-color);
+}
+.howitworks-card:nth-child(2):before {
+    content: '2';
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: .02em;
+    font-weight: 600;
+    top: 0;
+    left: 30px;
+    color: var(--primary-color);
+}
+.howitworks-card:nth-child(3):before {
+    content: '3';
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: .02em;
+    font-weight: 600;
+    top: 0;
+    left: 30px;
+    color: var(--primary-color);
+}
+.howitworks-card::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 48px;
+    background-color: #D7EFEF;
+    border-radius: 21% 25% 21% 0% / 25% 0% 25% 0%;
+}
+
+.howitworks-card h3 {
+    color: #24365E;
+}
+
 /* Utils Classes */
 .btn {
     display: flex;
