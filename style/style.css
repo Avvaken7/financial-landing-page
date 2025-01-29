@@ -10,6 +10,11 @@
     --light-orange: #FDFAF1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Outfit, sans-serif;
     font-size: 15px;
@@ -371,10 +376,6 @@ body {
     transition: transform 0.5s ease;
 }
 
-/* .pricing-card:hover {
-    box-shadow: 0px 0px 25px -8px rgba(0, 0, 0, 0.75);
-} */
-
 .pricing-card hr {
     width: 296px;
     border-top: 1px solid #C1DADA;
@@ -516,6 +517,96 @@ body {
     position: absolute;
     content: url('/assets/icons/check-icon.svg');
     left: 0;
+}
+
+/* Testimonials */
+.testimonials-title {
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.testimonials-title-color {
+    color: var(--primary-color);
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 27px 46px;
+}
+
+.quote {
+    color: #24365E;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.signature-author {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    color: #24365E;
+}
+
+.signature-position {
+    color: rgba(0, 0, 0, .4);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Slider */
+.slider-container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+    background-color: #948e8e;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #24365E;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: #EDEEFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 403px;
+    width: 723px;
+    border-radius: 32px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.swiper-slide-active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.7;
 }
 
 /* Utils Classes */
