@@ -42,3 +42,12 @@ document.querySelectorAll('.mobile-nav-item').forEach(n => n.
         mobileMenu.classList.remove('active');
         noscroll.classList.remove('overflow-hidden');
     }));
+
+
+function setScrollbarWidth() {
+    let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+}
+
+setScrollbarWidth();
+window.addEventListener('resize', setScrollbarWidth);

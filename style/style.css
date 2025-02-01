@@ -24,7 +24,7 @@ body {
 
 .overflow-hidden {
     overflow: hidden;
-    padding-right: 17px;
+    padding-right: var(--scrollbar-width);
 }
 
 /* Header */
