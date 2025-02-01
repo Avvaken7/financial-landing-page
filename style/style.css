@@ -24,6 +24,7 @@ body {
 
 .overflow-hidden {
     overflow: hidden;
+    padding-right: 17px;
 }
 
 /* Header */
@@ -76,6 +77,9 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 120px;
+    background: radial-gradient(circle at bottom right,
+            rgba(210, 245, 255, 0.1) 10%,
+            rgba(255, 255, 255, 1) 50%)
 }
 
 .hero-text {
@@ -88,7 +92,7 @@ body {
     text-wrap: balance;
 
     h1 {
-        font-size: 68px;
+        font-size: clamp(1.5rem, 5vw, 4.5rem);
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: -2px;
@@ -126,11 +130,32 @@ body {
 .features-block {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 55px;
     padding: 72px 104px;
 }
+
+@media (max-width: 1024px) {
+    .features-block {
+        padding: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-block {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media (320px <=width <=767px) {
+    .features-block {
+        padding: 56px 20px;
+        flex-direction: column;
+    }
+}
+
 
 .features-block:nth-child(1) {
     background-color: var(--light-green);
@@ -155,9 +180,33 @@ body {
     max-width: 389px;
 }
 
+@media (480px <=width <=768px) {
+    .features-text {
+        max-width: 100%;
+        order: 1;
+    }
+}
+
+@media (480px <=width <=768px) {
+    .features-label {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
 .features-label img {
     margin-bottom: 32px;
 }
+
+@media (480px <=width <=768px) {
+    .features-label img {
+        margin-bottom: 10px;
+    }
+}
+
 
 .feat-1 {
     color: #B6D3D3;
@@ -248,6 +297,13 @@ body {
 }
 
 /* Why choose Us */
+.whyus {
+    background: radial-gradient(circle at bottom right,
+            rgba(255, 237, 210, 0.1) 10%,
+            rgba(210, 255, 230, 0.1) 40%,
+            rgba(255, 255, 255, 1) 80%);
+}
+
 .whyus-title {
     text-align: center;
     margin-bottom: 112px;
@@ -260,8 +316,23 @@ body {
 .whyus-cards-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 112px;
-    margin-bottom: 130px;
+    padding-bottom: 130px;
+}
+
+@media (max-width: 1024px) {
+    .whyus-cards-list {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (480px <=width <=768px) {
+    .whyus-cards-list {
+        flex-direction: column;
+    }
 }
 
 .whyus-card {
@@ -269,6 +340,14 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .whyus-card {
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 .card-description {
@@ -296,6 +375,12 @@ body {
     gap: 32px;
 }
 
+@media (320px <=width <=768px) {
+    .howitworks-cards-list {
+        flex-direction: column;
+    }
+}
+
 .howitworks-card {
     display: flex;
     flex-direction: column;
@@ -305,6 +390,12 @@ body {
     background-color: #fff;
     padding: 64px;
     border-radius: 21px;
+}
+
+.howitworks-card-img {
+    width: 216px;
+    height: 216px;
+    object-fit: contain;
 }
 
 .howitworks-card:nth-child(1):before {
@@ -375,6 +466,7 @@ body {
 .pricing-plans {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 36px;
     margin-bottom: 186px;
@@ -382,7 +474,7 @@ body {
 
 .pricing-card {
     border-radius: 27px;
-    padding: 64px 40px;
+    padding: 64px 27px;
     transition: transform 0.5s ease;
 }
 
@@ -453,7 +545,6 @@ body {
 
 .pricing-card-plan {
     font-size: 46px;
-    line-height: 40px;
     font-weight: 700;
 }
 
@@ -593,6 +684,12 @@ footer {
     gap: 104px;
 }
 
+@media (max-width: 1024px) {
+    .footer-menu {
+        gap: 55px;
+    }
+}
+
 .footer-column {
     flex: 1;
     min-width: 150px;
@@ -725,7 +822,7 @@ footer {
 }
 
 .section-title {
-    font-size: 40px;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 600;
     color: #000;
     line-height: 48px;

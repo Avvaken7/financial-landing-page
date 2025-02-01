@@ -6,6 +6,21 @@ const swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
     }
 });
 
@@ -26,4 +41,4 @@ document.querySelectorAll('.mobile-nav-item').forEach(n => n.
         mobileBtn.classList.remove('active');
         mobileMenu.classList.remove('active');
         noscroll.classList.remove('overflow-hidden');
-}));
+    }));
