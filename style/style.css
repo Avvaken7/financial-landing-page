@@ -12,6 +12,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 
@@ -28,12 +29,20 @@ body {
 }
 
 /* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .top-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    padding: 20px 0px;
     margin-bottom: 112px;
 }
 
@@ -822,7 +831,7 @@ footer {
 }
 
 .section-title {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 600;
     color: #000;
     line-height: 48px;
@@ -830,8 +839,8 @@ footer {
 }
 
 .card-title {
+    font-size: clamp(1rem, 3vw, 1.4rem);
     font-weight: 600;
-    font-size: 21px;
     color: #000;
     line-height: 24px;
 }
@@ -889,11 +898,11 @@ footer {
 .mobile-nav-menu {
     position: fixed;
     top: 0;
-    right: -50vw;
+    right: -75vw;
     background-color: var(--light-green);
     height: 100vh;
     width: 100%;
-    max-width: 50vw;
+    max-width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -923,6 +932,7 @@ footer {
                 --secondary-color: rgba(36, 54, 94, 1);
                 color: var(--secondary-color);
                 text-decoration: none;
+                font-weight: 500;
             }
         }
     }

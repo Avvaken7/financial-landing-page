@@ -43,7 +43,7 @@ document.querySelectorAll('.mobile-nav-item').forEach(n => n.
         noscroll.classList.remove('overflow-hidden');
     }));
 
-
+// How to find scrollbar width and addind css variable
 function setScrollbarWidth() {
     let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
